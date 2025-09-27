@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Chess_Dolgikh.Classes;
 
 namespace Chess_Dolgikh
 {
@@ -20,9 +21,23 @@ namespace Chess_Dolgikh
     /// </summary>
     public partial class MainWindow : Window
     {
+        public List<Pawn> Pawns = new List<Pawn>();
+        public static MainWindow init;
+
         public MainWindow()
         {
             InitializeComponent();
+            init = this;
+        }
+
+        private void SelectTile(object aender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        public void OnSelect(Pawn pawn)
+        {
+
         }
     }
 }
